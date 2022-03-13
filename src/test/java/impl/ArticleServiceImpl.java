@@ -15,7 +15,7 @@ import static io.restassured.RestAssured.given;
 
 @Log4j2
 public class ArticleServiceImpl implements ArticleService {
-    TestConfig testConfig = new TestConfig();
+    TestConfig testConfig = new TestConfig() ;
 
     public List<Article> getArticles(String url) {
         String URL = testConfig.getURL() + url;
